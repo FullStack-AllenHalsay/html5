@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para calcular o IMC">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <!-- Header of the Page -->
+    <header>
+        <nav role="navigation">
+            <div>
+                <a href="aula2-masterclass.html">
+                    <img src="assets/logo3-1.png" alt="Logomarca da Empresa no formato de um Sol" width="50">
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="aula2-masterclass.html">Home</a></li>
+                <li><a href="#">O que é IMC</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main of the Page -->
+    <main>
+        <section>
+            <h1>Calculada IMC</h1>
+            <section>
+                <form action="">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Ex: João Silva" maxlength="50">
+
+                    <br><br>
+
+                    <label for="weight">Peso</label>
+                    <input type="text" name="weight" id="weight" placeholder="Ex: 80"><span>Kg</span>
+
+                    <br><br>
+
+                    <label for="height">Altura</label>
+                    <input type="text" name="height" id="height" placeholder="Ex: 1.75"><span>m</span>
+
+                    <br><br>
+
+                    <label>Mostrar nome</label><br>
+                    <input type="radio" name="showname" id="decision" value="Sim">
+                    <label for="showname">Sim</label><br>
+                    <input type="radio" name="showname" id="decision" value="Não">
+                    <label for="showname">Não</label>
+
+                    <br><br>
+
+                    <label>Mostrar condição física</label><br>
+                    <select name="showfisic" id="showfisicnow">
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+
+                    <br><br>
+
+                    <input type="submit" value="Calcular IMC">
+                    <input type="reset" value="Limpar">
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer of the page -->
+    <footer>
+
+        <p>Todos os direitos reservados - 2021</p>
+
+    </footer>
+</body>
+
+</html>
