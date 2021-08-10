@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <header>
+        <nav role="navigation">
+            <div>
+                <a href="index.html">
+                    <img src="assets/logo3-1.png" alt="Logo da Calculadora IMC" width="50">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="#">O que é IMC</a>
+                    <a href="#">Sobre Nós</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Calculo IMC</h1>
+            <section>
+                <form name="calculo_imc">
+                    <div>
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" placeholder="Ex: João Silva" name="nome" id="nome" required="required"
+                                maxlength="10">
+                        </div>
+
+                        <div>
+                            <label for="peso">Peso</label>
+                            <div>
+                                <input type="number" placeholder="Ex: 65" name="peso" id="peso" required="required"
+                                    min="0,01" max="600">
+                                <span>Kg</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="altura">Altura</label>
+                            <div>
+                                <input type="number" placeholder="Ex: 1.67" name="altura" id="altura"
+                                    required="required" min="0,01" max="3">
+                                <span>m</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="">Mostrar nome</label>
+                            <div>
+                                <label for="mostrar_nome">
+                                    <input type="radio" name="mostrar_nome" id="mostrar_nome" value="0" checked>
+                                    Sim
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="mostrar_nome">
+                                    <input type="radio" name="mostrar_nome" id="mostrar_nome" value="1">
+                                    Não
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="mostrar_condicao_fisica">Mostrar condição física</label>
+                            <select name="mostrar_condicao_fisica" id="mostrar_condicao_fisica">
+                                <option selected value="0">Sim</option>
+                                <option value="1">Não</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" name="calcular_imc" id="calcular_imc" value="Calcular IMC">
+                    <input type="reset" name="limpar" id="limpar" value="Limpar">
+                </form>
+                <p id="mostrar_imc"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados - 2021</p>
+    </footer>
+</body>
+
+</html>
